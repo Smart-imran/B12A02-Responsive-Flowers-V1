@@ -3,11 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flowers Shop |2025</title>
+    <title>Flowers Shop | 2025</title>
     <link rel="shortcut icon" href="./Assets/favicon.ico" type="image/x-icon" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="./styles/style.css" />
-    <!-- Font Awesome -->
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles/style.css" />    
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
@@ -18,49 +19,53 @@
   </head>
   <body>
     <header>
-      <nav class="navbar flex justify-between w-[1140px] h-[71px] mx-auto mt-4">
-        <img
-          class="w-[135px] h-[82px] cursor-pointer"
-          src="./assets/logo.png"
-          alt=""
-        />
-        <ul class="nav-links flex gap-4 items-center">
-          <li class="nav-item">
-            <a href="" class="nav-link w-11 h-6 text-[#252432]">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="" class="nav-link w-10 h-6 text-[#8987A1]">Shop</a>
-          </li>
-          <li class="nav-item">
-            <a href="" class="nav-link w-10 h-6 text-[#8987A1]">About us</a>
-          </li>
-          <li class="nav-item">
-            <a href="" class="nav-link text-[#000000]"
-              ><i class="fa-solid fa-cart-shopping"></i> Cart($56)</a
-            >
-          </li>
-        </ul>
+      <nav class="flex justify-between items-center max-w-[1140px] mx-auto mt-4 px-4 h-[71px]">
+        <!-- Logo -->
+        <div>
+          <img src="./assets/logo.png" alt="Logo" class="w-[135px] h-[82px] cursor-pointer" />
+        </div>
+        
+        <div class="hidden sm:flex items-center gap-6">
+          <a href="#" class="text-[#252432]">Home</a>
+          <a href="#" class="text-[#8987A1]">Shop</a>
+          <a href="#" class="text-[#8987A1]">About us</a>
+          <a href="#" class="text-[#000000]">
+            <i class="fa-solid fa-cart-shopping"></i> Cart($56)
+          </a>
+        </div>
+        
+        <div class="block sm:hidden">
+          <a href="#" class="text-[#000000]">
+            <i class="fa-solid fa-cart-shopping"></i> Cart($56)
+          </a>
+        </div>
       </nav>
 
-      <section class="banner-section w-[1140px] h-[461px]  mx-auto">
-
-        <div class="banner flex mt-[100px]">
-          <div class="banner-content w-[570px] h-[290px]">
-            <h1 class="banner-title noto-serif font-bold text-[65px]">ALWAYS <span class="text-[#E95A08]">FRESH</span><br><span class="text-[#E95A08]" >FLOWERS</span></h1>
-            <p class="banner-description inter font-normal text-[22px] text-[rgba(0,0,0,0.5)] mt-8">
+      <!-- BANNER SECTION -->
+      <section class="w-full max-w-[1140px] mx-auto mt-40 px-4">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-12">
+          <!-- Text Content -->
+          <div class="w-full md:w-[570px] order-2 md:order-1">
+            <h1 class="noto-serif font-bold text-[40px] md:text-[65px] leading-tight">
+              ALWAYS <span class="text-[#E95A08]">FRESH</span><br />
+              <span class="text-[#E95A08]">FLOWERS</span>
+            </h1>
+            <p class="inter font-normal text-[16px] md:text-[22px] text-[rgba(0,0,0,0.5)] mt-4 md:mt-8">
               There are many variations of passages of Lorem Ipsum available,
               but the majority have suffered alteration in some form, by
               injected humour, or randomized words which don't look even
             </p>
-            
           </div>
-          <img src="./assets/hero-flower.png" alt="" />
+
+          <!-- Image -->
+          <div class="w-full md:w-[500px] order-1 md:order-2">
+            <img src="./assets/hero-flower.png" alt="Hero Flower" class="w-full h-auto object-contain" />
+          </div>
         </div>
       </section>
     </header>
 
     <main></main>
-
     <footer></footer>
   </body>
 </html>
