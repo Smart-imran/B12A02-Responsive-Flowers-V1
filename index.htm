@@ -371,7 +371,6 @@
       </section>
 
       <!-- Join Section -->
-
       <section class="join-main">
         <div class="text-content text-center mt-20">
           <h1
@@ -379,7 +378,6 @@
           >
             <span class="text-[#E95A08]">Latest</span> Deals
           </h1>
-
           <p
             class="inter font-normal text-[14px] md:text-[22px] text-[rgba(0,0,0,0.5)] mt-2 md:mt-4"
           >
@@ -389,13 +387,15 @@
           </p>
         </div>
 
-        <!-- image-section  -->
-         <div class="w-full max-w-[1140px] h-[423px] mx-auto mt-10 flex flex-col md:flex-row gap-6">
+        <!-- image-section -->
+        <div
+          class="w-[1140px] h-[423px] mx-auto mt-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-2"
+        >
           <!-- Left Column (Two Images) -->
-          <div class="flex-1 flex flex-col gap-6">
+          <div class="flex-1 flex flex-col gap-4">
             <!-- Image 1 -->
             <div
-              class="relative w-full h-[300px] bg-cover bg-center overflow-hidden rounded-2xl"
+              class="relative w-[367px] h-[201px] bg-cover bg-center overflow-hidden rounded-2xl"
               style="background-image: url('./assets/deal-bloom.png')"
             >
               <div
@@ -407,7 +407,7 @@
                   60% Off | Bloom Plant
                 </h2>
                 <h2
-                  class="text-white text-[16px] md:text-[16px] font-semibold inter mt-2"
+                  class="text-white text-[16px] md:text-[16px] font-semibold underline inter mt-2"
                 >
                   Shop Now
                 </h2>
@@ -415,7 +415,7 @@
             </div>
             <!-- Image 2 -->
             <div
-              class="relative w-full h-[300px] bg-cover bg-center overflow-hidden rounded-2xl"
+              class="relative w-[367px] h-[201px] bg-cover bg-center overflow-hidden rounded-2xl"
               style="background-image: url('./assets/deal-ana.png')"
             >
               <div
@@ -427,7 +427,7 @@
                   60% Off | Bloom Plant
                 </h2>
                 <h2
-                  class="text-white text-[16px] md:text-[16px] font-semibold inter mt-2"
+                  class="text-white text-[16px] md:text-[16px] font-semibold underline inter mt-2"
                 >
                   Shop Now
                 </h2>
@@ -437,7 +437,7 @@
           <!-- Right Column (One Image) -->
           <div class="flex-1 mb-20">
             <div
-              class="relative w-[700px] h-[420px] bg-cover bg-center overflow-hidden rounded-3xl"
+              class="relative w-[800px] sm:w-full h-[420px] bg-cover bg-center overflow-hidden rounded-3xl"
               style="background-image: url('./assets/deal-zabo.png')"
             >
               <div
@@ -449,16 +449,92 @@
                   25% Off | Zabo Plant
                 </h2>
                 <h2
-                  class="text-white text-[16px] md:text-[28px] font-semibold inter mt-2"
+                  class="text-white text-[16px] md:text-[28px] font-semibold underline inter mt-2"
                 >
                   Shop Now
                 </h2>
               </div>
             </div>
           </div>
-        </div>       
-      </section> 
+        </div>
+      </section>
+
+      <!-- Join Section 2 -->
+      <section>
+        <div
+          class="relative w-full h-[533px] bg-cover bg-center overflow-hidden sm:flex flex-row mt-20 mb-10"
+          style="background-image: url('./assets/news-letter-bg.png')"
+        >
+          <div
+            class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-40"
+          >
+            <!-- Text -->
+            <h1
+              class="text-white text-3xl sm:text-4xl md:text-5xl font-bold noto-serif mb-4 sm:mb-6"
+            >
+              Join the colorful Bunch
+            </h1>
+            <!-- Search Bar with Button -->
+            <div class="flex w-full max-w-xs sm:max-w-md md:max-w-lg px-4">
+              <input
+                type="text"
+                placeholder="Write Email"
+                class="w-full px-3 sm:px-4 py-2 text-sm sm:text-base rounded-l-md border-none focus:outline-none focus:ring-2 focus:ring-[#E95A08]"
+              />
+              <button
+                class="px-3 sm:px-4 md:px-6 py-2 bg-[#E95A08] text-white text-sm sm:text-base font-semibold rounded-r-md hover:bg-[#c94a07] transition-colors"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+
+    <footer>
+        <section class="footer-section w-full max-w-[1140px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-6 px-4 py-10">
+
+            <div class="logo w-[359px] h-[179px]">
+                <img class="w-[135px] h-[82px]" src="./assets/logo.png" alt="">
+                <p class="inter font-normal text-[22px] text-[rgba(0,0,0,0.5)]">
+                    Indulge your senses with the <br> beauty and fragrance of our fresh <br> flower shop. 
+                </p>
+            </div>
+            <div class="nav-1 ml-20 flex flex-col gap-2 inter font-normal text-[22px] text-gray-500">
+                <h1>Home</h1>
+                <h1>About Us</h1>
+                <h1>Blog</h1>
+                <h1>FAQ</h1>
+                <h1>Contact US</h1>
+            </div>
+            <div class="nav-2 ml-20 flex flex-col gap-2 inter font-normal text-[22px] text-gray-500">
+                <h1>Features</h1>
+                <h1>Pricing</h1>
+                <h1>Privacy Policy</h1>
+                <h1>Terms of Service </h1>
+                <h1>Help Center</h1>
+            </div>
+            <div class="icone">
+
+                <div class="main flex items-center gap-10">
+                    <div>
+                        <img src="./assets/icon-linkedin.png" alt="">
+                    </div>
+                    <div>
+                        <img src="./assets/icon-twitter.png" alt="">
+                    </div>
+                    <div>
+                        <img src="./assets/icon-facebook.png" alt="">
+                    </div>
+                    <div>
+                        <img src="./assets/icon-youtube.png" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </footer>
   </body>
 </html>
